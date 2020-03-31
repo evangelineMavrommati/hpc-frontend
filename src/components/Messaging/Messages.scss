@@ -1,0 +1,65 @@
+.parent {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  bottom: 0;
+
+  .list {
+    flex-grow: 1;
+    flex-direction: column;
+    border-right: 1px solid  rgba(0, 0, 0, 0.12);
+    align-items: stretch;
+  }
+
+  .convo {
+    flex-grow:3;
+    flex-direction: column;
+    padding: 25px 25px 25px 25px;
+    display: flex;
+
+    &-details {
+      align-self: center;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+    }
+    
+    &-guest {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    &-sending {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+    }
+
+    &-text {
+      display: flex;
+      align-items: flex-end;
+      padding-top: 10px;
+    }
+
+    &-your-messages {
+      border-radius: 20px;
+      padding: 8px 15px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      display: inline-block;
+      background-color: #85c8e2;
+    }
+
+    &-their-messages {
+      border-radius: 20px;
+      padding: 8px 15px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      display: inline-block;
+      background-color: #eee;
+      align-items: center;
+      display: flex;
+    }
+  }
+}
